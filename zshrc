@@ -1,5 +1,5 @@
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
+HISTFILE=~/.cache/zsh/histfile
 HISTSIZE=1000
 SAVEHIST=1000
 setopt autocd extendedglob nomatch notify
@@ -8,7 +8,7 @@ bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/aldo/.zshrc'
-
+autoload -U colors && colors
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
@@ -60,5 +60,4 @@ export BROWSER="firefox"
 export PAGER="less"
 export WM="awesome"
 # Lua language server 
-export PATH=/home/aldo/.local/share/nvim/lsp_servers/lua-language-server/bin/Linux:$PATH
-alias luamake=/home/aldo/.local/share/nvim/lsp_servers/lua-language-server/3rd/luamake/luamake
+export PATH=$HOME/.local/share/nvim/lsp_servers/lua-language-server/bin/Linux:$PATH
