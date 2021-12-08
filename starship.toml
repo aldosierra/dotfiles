@@ -1,0 +1,22 @@
+#############################################################################################
+# Starship config file ######################################################################
+#############################################################################################
+
+# Replace symbol
+[character]
+success_symbol = "[❯❯❯](bold cyan)"
+error_symbol = "[❯❯❯](bold purple)"
+vicmd_symbol = "[❮❮❮](bold cyan)"
+
+# Line Break
+[line_break]
+disabled = true
+
+# Directory opts
+[directory]
+truncation_length = 2
+style = "bold blue"
+
+# Disable Command Duration
+[cmd_duration]
+disabled = true
