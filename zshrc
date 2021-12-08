@@ -43,6 +43,7 @@ alias ka='killall -9'
 alias zrc='nvim ~/.zshrc'
 # Git
 alias ga='git add'
+alias gaa='git add .'
 alias gc='git commit -m'
 alias gps='git push'
 alias gpl='git pull'
