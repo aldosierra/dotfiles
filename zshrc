@@ -51,6 +51,14 @@ alias gpl='git pull'
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 #Env
 export DOTFILES=/home/aldo/Projects/dotfiles
+export EDITOR="nvim"
+export READER="zathura"
+export VISUAL="nvim"
+export CODEEDITOR="nvim"
+export TERMINAL="kitty"
+export BROWSER="firefox"
+export PAGER="less"
+export WM="awesome"
 # Lua language server 
 export PATH=/home/aldo/.local/share/nvim/lsp_servers/lua-language-server/bin/Linux:$PATH
 alias luamake=/home/aldo/.local/share/nvim/lsp_servers/lua-language-server/3rd/luamake/luamake
