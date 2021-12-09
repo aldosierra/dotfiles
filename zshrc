@@ -65,6 +65,9 @@ alias gc='git commit -m'
 alias gps='git push'
 alias gpl='git pull'
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+alias vim='nvim'
+alias vi='nvim'
+alias v='nvim'
 # Env
 export DOTFILES=/home/aldo/Projects/dotfiles
 export LESS='-R --use-color -Dd+r$Du+b'
