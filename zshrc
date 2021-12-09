@@ -74,6 +74,7 @@ export VISUAL="nvim"
 export CODEEDITOR="nvim"
 export TERMINAL="kitty"
 export BROWSER="firefox"
+export COLORTERM="truecolor"
 export PAGER="less"
 export WM="awesome"
 export KEYTIMEOUT=1
