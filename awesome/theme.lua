@@ -11,24 +11,24 @@ local themes_path = gfs.get_themes_dir()
 
 local theme = {}
 
-theme.font          = "FiraCode Nerd Font 9"
+theme.font          = "mononoki Nerd Font 10"
 
-theme.bg_normal     = "#222222"
-theme.bg_focus      = "#535d6c"
-theme.bg_urgent     = "#ff0000"
-theme.bg_minimize   = "#444444"
+theme.bg_normal     = "#15161E"
+theme.bg_focus      = "#7AA2F7"
+theme.bg_urgent     = "#9ECE6A"
+theme.bg_minimize   = "#33467C"
 theme.bg_systray    = theme.bg_normal
 
-theme.fg_normal     = "#aaaaaa"
-theme.fg_focus      = "#ffffff"
-theme.fg_urgent     = "#ffffff"
-theme.fg_minimize   = "#ffffff"
+theme.fg_normal     = "#C0CAF5"
+theme.fg_focus      = "#1F2335"
+theme.fg_urgent     = "#1F2335"
+theme.fg_minimize   = "#C0CAF5"
 
-theme.useless_gap   = dpi(0)
-theme.border_width  = dpi(1)
-theme.border_normal = "#000000"
-theme.border_focus  = "#535d6c"
-theme.border_marked = "#91231c"
+theme.useless_gap   = dpi(7)
+theme.border_width  = dpi(3)
+theme.border_normal = "#33467C"
+theme.border_focus  = "#7AA2F7"
+theme.border_marked = "#9ECE6A"
 
 -- There are other variable sets
 -- overriding the default one when
@@ -97,7 +97,8 @@ theme.titlebar_maximized_button_focus_inactive  = themes_path.."default/titlebar
 theme.titlebar_maximized_button_normal_active = themes_path.."default/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active  = themes_path.."default/titlebar/maximized_focus_active.png"
 
-theme.wallpaper = themes_path.."default/background.png"
+-- beautiful.get().wallpaper = "/home/aldo/Pictures/Walls/spaceTrip.jpg"
+theme.wallpaper = "/home/aldo/Pictures/Walls/spaceTrip.jpg"
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."default/layouts/fairhw.png"

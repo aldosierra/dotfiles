@@ -61,20 +61,20 @@ modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
-    awful.layout.suit.tile,
+    awful.layout.suit.spiral.dwindle,
     awful.layout.suit.floating,
+    -- awful.layout.suit.tile,
     -- awful.layout.suit.tile.left,
     -- awful.layout.suit.tile.bottom,
     -- awful.layout.suit.tile.top,
     -- awful.layout.suit.fair,
     -- awful.layout.suit.fair.horizontal,
     -- awful.layout.suit.spiral,
-    -- awful.layout.suit.spiral.dwindle,
     -- awful.layout.suit.max,
     -- awful.layout.suit.max.fullscreen,
     -- awful.layout.suit.magnifier,
-    -- awful.layout.suit.corner.nw,
     -- awful.layout.suit.corner.ne,
+    -- awful.layout.suit.corner.nw,
     -- awful.layout.suit.corner.sw,
     -- awful.layout.suit.corner.se,
 }
@@ -95,8 +95,12 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                                   }
                         })
 
+-- praisewidget = wibox.widget.textbox()
+-- praisewidget.text = "You are great!"
 mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
                                      menu = mymainmenu })
+
+myLauncher = awful.widget.launcher({ text = " ", menu = mymainmenu })
 
 -- Menubar configuration
 menubar.utils.terminal = terminal -- Set the terminal for applications that require it
@@ -169,7 +173,9 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
+    local names = {" ", "爵 ", " ", " ", " ", "漣 "}
+    -- awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
+    awful.tag(names, s, awful.layout.layouts[1])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -185,6 +191,70 @@ awful.screen.connect_for_each_screen(function(s)
     s.mytaglist = awful.widget.taglist {
         screen  = s,
         filter  = awful.widget.taglist.filter.all,
+    --     style   = {shape = gears.shape.powerline},
+    --     layout  = {
+    --       spacing = -12,
+    --       spacing_widget = {
+    --         color = '#C0CAF5',
+    --         shape = gears.shape.powerline,
+    --         widget = wibox.widget.separator,
+    --       },
+    --       layout = wibox.layout.fixed.horizontal
+    --     },
+    --     widget_template = {
+    --     {
+    --         {
+    --             {
+    --                 {
+    --                     {
+    --                         id     = 'index_role',
+    --                         widget = wibox.widget.textbox,
+    --                     },
+    --                     margins = 4,
+    --                     widget  = wibox.container.margin,
+    --                 },
+    --                 bg     = '#dddddd',
+    --                 shape  = gears.shape.circle,
+    --                 widget = wibox.container.background,
+    --             },
+    --             {
+    --                 {
+    --                     id     = 'icon_role',
+    --                     widget = wibox.widget.imagebox,
+    --                 },
+    --                 margins = 2,
+    --                 widget  = wibox.container.margin,
+    --             },
+    --             {
+    --                 id     = 'text_role',
+    --                 widget = wibox.widget.textbox,
+    --             },
+    --             layout = wibox.layout.fixed.horizontal,
+    --         },
+    --         left  = 18,
+    --         right = 18,
+    --         widget = wibox.container.margin
+    --     },
+    --     id     = 'background_role',
+    --     widget = wibox.container.background,
+    --     -- Add support for hover colors and an index label
+    --     create_callback = function(self, c3, index, objects) --luacheck: no unused args
+    --         self:get_children_by_id('index_role')[1].markup = '<b> '..index..' </b>'
+    --         self:connect_signal('mouse::enter', function()
+    --             if self.bg ~= '#9ECE6A' then
+    --                 self.backup     = self.bg
+    --                 self.has_backup = true
+    --             end
+    --             self.bg = '#9ECE6A'
+    --         end)
+    --         self:connect_signal('mouse::leave', function()
+    --             if self.has_backup then self.bg = self.backup end
+    --         end)
+    --     end,
+    --     update_callback = function(self, c3, index, objects) --luacheck: no unused args
+    --         self:get_children_by_id('index_role')[1].markup = '<b> '..index..' </b>'
+    --     end,
+    -- },
         buttons = taglist_buttons
     }
 
@@ -204,6 +274,7 @@ awful.screen.connect_for_each_screen(function(s)
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
             mylauncher,
+            -- praisewidget,
             s.mytaglist,
             s.mypromptbox,
         },
@@ -492,7 +563,7 @@ awful.rules.rules = {
 
     -- Add titlebars to normal clients and dialogs
     { rule_any = {type = { "normal", "dialog" }
-      }, properties = { titlebars_enabled = true }
+      }, properties = { titlebars_enabled = false }
     },
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
