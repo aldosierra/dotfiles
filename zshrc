@@ -65,6 +65,7 @@ alias gc='git commit -m'
 alias gps='git push'
 alias gpl='git pull'
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+alias dot='cd $DOTFILES'
 alias vim='nvim'
 alias vi='nvim'
 alias v='nvim'
@@ -83,4 +84,4 @@ export PAGER="less"
 export WM="awesome"
 export KEYTIMEOUT=1
 # Path
-export PATH=$HOME/.local/share/nvim/lsp_servers/lua-language-server/bin/Linux:$PATH
+export PATH=$HOME/.local/bin:$HOME/.local/share/nvim/lsp_servers/lua-language-server/bin/Linux:$PATH
