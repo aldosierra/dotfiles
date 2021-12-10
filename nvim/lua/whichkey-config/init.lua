@@ -31,7 +31,7 @@ local mappings = {
     q = {'<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', "Show loclist"}
   },
   -- LazyGit require sudo pacman -S lazygit
-  t = {t = {":ToggleTerm<cr>", "Split Below"}, f = {toggle_float, "Floating Terminal"}, l = {toggle_lazygit, "LazyGit"}}
+  t = {t = {toggle_float, "Floating Terminal"}, l = {toggle_lazygit, "LazyGit"}}
 }
 local opts = {prefix = '<leader>'}
 wk.register(mappings, opts)
