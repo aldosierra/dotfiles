@@ -35,6 +35,9 @@ run_ranger () {
     zle reset-prompt
 }
 zle -N run_ranger
+# Source zshrc
+run_source () {source ~/.zshrc}
+zle -N run_source
 # Plugins
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -42,6 +45,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 eval "$(starship init zsh)"
 # Keybinds
 bindkey -v
+bindkey '^u' run_source
 bindkey '^r' run_ranger
 bindkey '^e' edit-command-line
 bindkey -M menuselect 'h' vi-backward-char
