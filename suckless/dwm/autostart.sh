@@ -9,4 +9,5 @@ function run {
 run nitrogen --restore
 run picom --experimental-backends --vsync
 run dunst
+run slstatus
 run eval "$(ssh-agent -s)"
