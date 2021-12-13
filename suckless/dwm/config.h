@@ -37,7 +37,7 @@ static Sp scratchpads[] = {
 };
 
 /* tagging */
-static const char *tags[] = { "ﲵ" , "", "", "辶", "", "ﯙ" , "切", "阮", "漣" };
+static const char *tags[] = { "ﲵ" , "", "", "辶", "ﱮ" , "ﯙ" , "切", "阮", "漣" };
 static const Rule rules[] = {
 	/* xprop(1):
 	 *	WM_CLASS(STRING) = instance, class
