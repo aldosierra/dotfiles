@@ -9,8 +9,8 @@ static const unsigned int gappx     = 7;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "FiraCode Nerd Font:size=10" };
-static const char dmenufont[]       = "FiraCode Nerd Font:size=10";
+static const char *fonts[]          = { "NotoSans Nerd Font:size=11" };
+static const char dmenufont[]       = "NotoSans Nerd Font:size=11";
 static const char col_gray1[]       = "#1A1B26";
 static const char col_gray2[]       = "#1A1B26";
 static const char col_gray3[]       = "#C0CAF5";
@@ -37,7 +37,7 @@ static Sp scratchpads[] = {
 };
 
 /* tagging */
-static const char *tags[] = { " ", " ", " ", " ", " ", " ", " ", " ", " " };
+static const char *tags[] = { "ﲵ" , "", "", "辶", "", "ﯙ" , "切", "阮", "漣" };
 static const Rule rules[] = {
 	/* xprop(1):
 	 *	WM_CLASS(STRING) = instance, class
