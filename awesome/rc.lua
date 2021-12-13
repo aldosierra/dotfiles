@@ -173,7 +173,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    local names = { "ﲵ" , "", "", "辶", "", "ﯙ", "切", "阮", "漣"}
+    local names = { "ﲵ" , "", "", "辶", "ﱮ" , "ﯙ", "切", "阮", "漣"}
     awful.tag(names, s, awful.layout.layouts[1])
     -- awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
 
