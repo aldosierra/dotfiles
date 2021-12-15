@@ -79,6 +79,7 @@ alias btw='neofetch'
 alias vim='nvim'
 alias vi='nvim'
 alias v='nvim'
+alias sv='sudo -e'
 # Env
 export DOTFILES=/home/aldo/Projects/dotfiles
 export LESS='-R --use-color -Dd+r$Du+b'

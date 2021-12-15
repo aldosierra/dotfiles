@@ -37,11 +37,11 @@ return require('packer').startup(function(use)
   -- Colors
   use {'norcalli/nvim-colorizer.lua', event = "BufRead", config = "require('colorizer-config')"}
   -- Comments
-  use {'terrortylor/nvim-comment', cmd = "CommentToggle", config = "require('comment-config')"}
+  use {'terrortylor/nvim-comment', config = "require('comment-config')"}
   -- Format on Save
-  use {'lukas-reineke/format.nvim', cmd = "Format", config = "require('format-config')"}
+  use {'lukas-reineke/format.nvim', config = "require('format-config')"}
   -- Gitsigns
   use {'lewis6991/gitsigns.nvim', requires = {'nvim-lua/plenary.nvim'}, config = "require('gitsigns').setup {current_line_blame = false}"}
   -- Dashboard
-  use {'glepnir/dashboard-nvim', cmd = "Dashboard", config = "require('dashboard-config')"}
+  use {'glepnir/dashboard-nvim', config = "require('dashboard-config')"}
 end)

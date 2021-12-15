@@ -67,7 +67,7 @@ static const struct arg args[] = {
 	/* function format          argument */
 	{ cpu_perc, " [ ﬙ %s%% ] ",           NULL        },
 	{ ram_used, " [ 勤 %s ] ",           NULL        },
-	{ run_command, " [ %s ] ",           "/home/aldo/Projects/dotfiles/suckless/slstatus/sound.sh" },
+	{ run_command, " [ %s ] ",           "/home/aldo/Projects/dotfiles/suckless/slstatus/sound.sh 2> /dev/null" },
 	{ datetime, " [  %s ] ",             "%a %b %d"  },
 	{ datetime, " [  %s ] ",             "%I:%M%p"   },
 };
