@@ -39,9 +39,8 @@ zle -N run_ranger
 run_source () {source ~/.zshrc}
 zle -N run_source
 # Plugins
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /home/aldo/Projects/dotfiles/zsh/plugins/git-prompt.sh
+source /home/aldo/Projects/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/aldo/Projects/dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Prompt
 # eval "$(starship init zsh)"
 PROMPT="%B[%b%B%F{cyan}%n%f%b%B%F{cyan}@%f%b%B%m%b%B %b%B%F{cyan} %f%b%B%1~%b%B]%b%B$ %b"

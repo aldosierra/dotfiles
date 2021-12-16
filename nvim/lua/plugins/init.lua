@@ -2,29 +2,29 @@ return require('packer').startup(function(use)
   -- Packer
   use 'wbthomason/packer.nvim'
   -- Tokyonight Theme
-  use {'folke/tokyonight.nvim', config = "require('tokyonight-config')"}
+  use {'folke/tokyonight.nvim'}
   -- Nvim Treesitter
-  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate', event = 'BufWinEnter', config = "require('treesitter-config')"}
+  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
   -- Lualine
-  use {'nvim-lualine/lualine.nvim', requires = {'kyazdani42/nvim-web-devicons', opt = true}, event = "BufWinEnter", config = "require('lualine-config')"}
+  use {'nvim-lualine/lualine.nvim', requires = {'kyazdani42/nvim-web-devicons', opt = true}}
   -- Bufferline
-  use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons', event = "BufWinEnter", config = "require('bufferline-config')"}
+  use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
   -- Nvim Tree
-  use {'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons', cmd = "NvimTreeToggle", config = "require('tree-config')"}
+  use {'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons'}
   -- Autotag
-  use {'windwp/nvim-ts-autotag', event = "InsertEnter", after = "nvim-treesitter"}
+  use {'windwp/nvim-ts-autotag'}
   -- Rainbow
-  use {'p00f/nvim-ts-rainbow', after = "nvim-treesitter"}
+  use {'p00f/nvim-ts-rainbow'}
   -- Toggle Term
-  use {'akinsho/toggleterm.nvim', config = "require('toggleterm-config')"}
+  use {'akinsho/toggleterm.nvim'}
   -- Autopair
-  use {'windwp/nvim-autopairs', config = "require('autopairs-config')", after = "nvim-cmp"}
+  use {'windwp/nvim-autopairs'}
   -- Which Key
-  use {'folke/which-key.nvim', event = "BufWinEnter", config = "require('whichkey-config')"}
+  use {'folke/which-key.nvim'}
   -- Telescope (need sudo pacman -S ripgrep)
-  use {'nvim-telescope/telescope.nvim', requires = {'nvim-lua/plenary.nvim'}, cmd = "Telescope", config = "require('telescope-config')"}
+  use {'nvim-telescope/telescope.nvim', requires = {'nvim-lua/plenary.nvim'}}
   -- Autocompletions
-  use {'neovim/nvim-lspconfig', config = "require('lsp')"}
+  use {'neovim/nvim-lspconfig'}
   use {'hrsh7th/cmp-nvim-lsp'}
   use {'hrsh7th/cmp-buffer'}
   use {'hrsh7th/cmp-path'}
@@ -35,13 +35,13 @@ return require('packer').startup(function(use)
   use {'hrsh7th/vim-vsnip'}
   use {'onsails/lspkind-nvim'}
   -- Colors
-  use {'norcalli/nvim-colorizer.lua', event = "BufRead", config = "require('colorizer-config')"}
+  use {'norcalli/nvim-colorizer.lua'}
   -- Comments
-  use {'terrortylor/nvim-comment', config = "require('comment-config')"}
+  use {'terrortylor/nvim-comment'}
   -- Format on Save
-  use {'lukas-reineke/format.nvim', config = "require('format-config')"}
+  use {'lukas-reineke/format.nvim'}
   -- Gitsigns
-  use {'lewis6991/gitsigns.nvim', requires = {'nvim-lua/plenary.nvim'}, config = "require('gitsigns').setup {current_line_blame = false}"}
+  use {'lewis6991/gitsigns.nvim', requires = {'nvim-lua/plenary.nvim'}}
   -- Dashboard
-  use {'glepnir/dashboard-nvim', config = "require('dashboard-config')"}
+  use {'glepnir/dashboard-nvim'}
 end)
