@@ -3,11 +3,13 @@ HISTFILE=~/.cache/zsh/histfile
 HISTSIZE=1000
 SAVEHIST=1000
 # General opts
-setopt autocd extendedglob nomatch notify
+setopt autocd extendedglob nomatch notify PROMPT_SUBST
 unsetopt beep
 # Completion
 zstyle :compinstall filename '$HOME/.zshrc'
 autoload -U colors && colors
+# PROMPT="%B[%b%B%F{cyan}%n%f%b%B%F{cyan}@%f%b%B%m%b%B %b%B%F{cyan} %f%b%B%1~%b%B]%b%B$ %b"
+PROMPT="%B%{$fg[cyan]%}[%{$fg[cyan]%}%n%{$fg[cyan]%}@%{$fg[white]%}%M %{$fg[cyan]%} %{$fg[white]%}%1~%{$fg[cyan]%}]%{$fg[white]%}$%b "
 autoload edit-command-line; zle -N edit-command-line
 autoload -Uz compinit
 zstyle ':completion:*' menu select
@@ -41,10 +43,7 @@ zle -N run_source
 # Plugins
 source /home/aldo/Projects/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /home/aldo/Projects/dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-# Prompt
-# eval "$(starship init zsh)"
-PROMPT="%B[%b%B%F{cyan}%n%f%b%B%F{cyan}@%f%b%B%m%b%B %b%B%F{cyan} %f%b%B%1~%b%B]%b%B$ %b"
-# export RPROMPT=$'$(__git_ps1 "%s")'
+source /home/aldo/Projects/dotfiles/zsh/plugins/git.zsh
 # Keybinds
 bindkey -v
 bindkey '^u' run_source
