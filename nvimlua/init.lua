@@ -1,10 +1,10 @@
 -- Nvim Config
+-- Call Plugins
+require('plugins')
 -- Call Options
 require('options')
 -- Call Keybindings
 require('keybindings')
--- Call Plugins
-require('plugins')
 -- Call Tokyonight Them
 require('tokyonight-config')
 -- Call Nvim Treesitter

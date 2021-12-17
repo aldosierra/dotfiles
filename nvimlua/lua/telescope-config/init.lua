@@ -1,4 +1,3 @@
-local actions = require('telescope.actions')
 require('telescope').setup {
   defaults = {
     layout_config = {width = 0.75, prompt_position = "top", preview_cutoff = 120, horizontal = {mirror = false}, vertical = {mirror = false}},
@@ -26,16 +25,16 @@ require('telescope').setup {
     buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker,
     mappings = {
       i = {
-        ["<C-j>"] = actions.move_selection_next,
-        ["<C-k>"] = actions.move_selection_previous,
-        ["<C-q>"] = actions.smart_send_to_qflist + actions.open_qflist,
-        ["<esc>"] = actions.close,
-        ["<CR>"] = actions.select_default + actions.center
+        ["<C-j>"] = require('telescope.actions').move_selection_next,
+        ["<C-k>"] = require('telescope.actions').move_selection_previous,
+        ["<C-q>"] = require('telescope.actions').smart_send_to_qflist + require('telescope.actions').open_qflist,
+        ["<esc>"] = require('telescope.actions').close,
+        ["<CR>"] = require('telescope.actions').select_default + require('telescope.actions').center
       },
       n = {
-        ["<C-j>"] = actions.move_selection_next,
-        ["<C-k>"] = actions.move_selection_previous,
-        ["<C-q>"] = actions.smart_send_to_qflist + actions.open_qflist
+        ["<C-j>"] = require('telescope.actions').move_selection_next,
+        ["<C-k>"] = require('telescope.actions').move_selection_previous,
+        ["<C-q>"] = require('telescope.actions').smart_send_to_qflist + require('telescope.actions').open_qflist
       }
     }
   }
