@@ -13,9 +13,9 @@ static const char *fonts[]          = { "NotoSans Nerd Font:size=11" };
 static const char dmenufont[]       = "NotoSans Nerd Font:size=11";
 static const char col_gray1[]       = "#000000";
 static const char col_gray2[]       = "#1A1B26";
-static const char col_gray3[]       = "#7AA2F7";
+static const char col_gray3[]       = "#00FFFF";
 static const char col_gray4[]       = "#000000";
-static const char col_cyan[]        = "#7AA2F7";
+static const char col_cyan[]        = "#00FFFF";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
