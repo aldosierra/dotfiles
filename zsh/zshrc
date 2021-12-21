@@ -92,4 +92,7 @@ export PAGER="less"
 export WM="awesome"
 export KEYTIMEOUT=1
 # Path
-export PATH=$HOME/.local/bin:$HOME/.local/share/nvim/lsp_servers/lua-language-server/bin/Linux:$PATH
+export PATH=$HOME/.local/share/nvim/lsp_servers/lua-language-server/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
+
+alias luamake=/home/aldo/.local/share/nvim/lsp_servers/lua-language-server/3rd/luamake/luamake
