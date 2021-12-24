@@ -71,13 +71,5 @@ export MANPAGER="less -R --use-color -Dd+r -Du+b"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export CODEEDITOR="gedit"
-export TERMINAL="gnome-terminal"
-export BROWSER="firefox"
-export COLORTERM="truecolor"
-export PAGER="less"
-export KEYTIMEOUT=1
 # Path
-export PATH=$HOME/.local/share/nvim/lsp_servers/lua-language-server/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
-# Lua server
-alias luamake=/home/aldo/.local/share/nvim/lsp_servers/lua-language-server/3rd/luamake/luamake
