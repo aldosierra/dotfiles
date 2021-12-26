@@ -64,12 +64,12 @@ alias vim='nvim'
 alias vi='nvim'
 alias v='nvim'
 alias sv='sudo -e'
-# Env
+# Env vars
 export DOTFILES=/home/aldo/Projects/dotfiles
 export LESS='-R --use-color -Dd+r$Du+b'
 export MANPAGER="less -R --use-color -Dd+r -Du+b"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export CODEEDITOR="gedit"
-# Path
+# Path vars
 export PATH=$HOME/.local/bin:$PATH
