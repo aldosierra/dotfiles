@@ -1,0 +1,34 @@
+{
+  "Main": {
+    "prefix": ["bmain"],
+    "body": [
+      "#include <stdio.h>",
+      "${1:$TM_SELECTED_TEXT}",
+      "int main(){",
+      "\t$0",
+      "\treturn 0;",
+      "}"
+    ]
+  },
+  "Include": {
+    "prefix": ["include"],
+    "body": [
+      "#include <${1:$TM_SELECTED_TEXT}>",
+      "$0"
+    ]
+  },
+  "Print": {
+    "prefix": ["printf"],
+    "body": [
+      "printf(${1:$TM_SELECTED_TEXT}, ${2:$TM_SELECTED_TEXT});",
+      "$0"
+    ]
+  },
+  "Scan": {
+    "prefix": ["scanf"],
+    "body": [
+      "scanf(${1:$TM_SELECTED_TEXT}, ${2:$TM_SELECTED_TEXT});",
+      "$0"
+    ]
+  }
+}
