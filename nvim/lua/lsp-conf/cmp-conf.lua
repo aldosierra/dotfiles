@@ -45,10 +45,10 @@ cmp.setup({
     end, { "i", "s" }),
   },
   sources = cmp.config.sources({
+    { name = 'vsnip' },
     { name = 'nvim_lsp' },
     { name = 'nvim_lua' },
     { name = 'path' },
-    { name = 'vsnip' },
   }, {
     { name = 'buffer' },
   }),
