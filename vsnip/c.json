@@ -6,6 +6,7 @@
       "${1:$TM_SELECTED_TEXT}",
       "int main(){",
       "\t$0",
+      "\t",
       "\treturn 0;",
       "}"
     ]
