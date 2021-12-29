@@ -30,6 +30,7 @@ zle -N run_source
 # Plugins
 source /home/aldo/Projects/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /home/aldo/Projects/dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /home/aldo/Projects/dotfiles/zsh/plugins/sudo/sudo.plugin.zsh
 # Keybinds
 bindkey -v
 bindkey '^u' run_source
