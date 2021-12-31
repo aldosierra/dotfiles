@@ -42,6 +42,7 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 # Alias
 alias ls='ls --color=auto --group-directories-first -h'
+alias l='ls'
 alias ll='ls -l'
 alias la='ls -A'
 alias lla='ls -lA'
