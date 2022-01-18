@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospace:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Fira Code Nerd Font:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 8;
 
 /*
@@ -103,9 +103,9 @@ static const char *colorname[] = {
 	"red3",
 	"green3",
 	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
+	"#2A84D2",
+	"#4E5AB7",
+	"#1081D6",
 	"gray90",
 
 	/* 8 bright colors */
@@ -113,9 +113,9 @@ static const char *colorname[] = {
 	"red",
 	"green",
 	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
+	"#1081D6",
+	"#5350B9",
+	"#0F7DDB",
 	"white",
 
 	[255] = 0,
