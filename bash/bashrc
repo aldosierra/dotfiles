@@ -1,0 +1,21 @@
+# ~/.bashrc
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# History
+export HISTCONTROL=ignoredups
+
+# Prompt
+PS1='\[\e[0;1;34m\][\[\e[0;1;34m\]\u\[\e[0;1;34m\]@\[\e[0;1m\]\h \[\e[0;1m\]\W\[\e[0;1;34m\]]\[\e[0;1m\]\$ \[\e[0m\]'
+
+# Alias
+alias ls='ls --color=auto --group-directories-first -h'
+alias ip='ip --color=auto'
+alias diff='diff --color=auto'
+alias grep='grep --color=auto'
+alias tree='tree -C'
+
+# Less and Man Colors
+export LESS='-R --use-color -Dd+b$Du+w'
+export MANPAGER="less -R --use-color -Dd+b -Du+w"
