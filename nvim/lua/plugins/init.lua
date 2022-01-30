@@ -12,10 +12,6 @@ return require('packer').startup(function(use)
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
   -- Nvim Tree
   use {'kyazdani42/nvim-tree.lua', requires = {'kyazdani42/nvim-web-devicons'}}
-  -- Autotag
-  use 'windwp/nvim-ts-autotag'
-  -- Autopair
-  use 'windwp/nvim-autopairs'
   -- Whichkey
   use 'folke/which-key.nvim'
   -- Telescope
