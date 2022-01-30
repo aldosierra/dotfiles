@@ -1,0 +1,36 @@
+foregorund: #D6DBE5
+background: #131313
+highlight background: #D6DBE5
+highlight foregorund: #131313
+
+// black
+color 0: #1F1F1F
+color 8: #D6DBE5
+
+// red
+color 1: #F81118
+color 9: #DE352E
+
+// green
+color 2: #2DC55E
+color 10: #1DD361
+
+// yellow
+color 3: #ECBA0F
+color 11: #F3BD09
+
+// blue 
+color 4: #2A84D2
+color 12: #1081D6
+
+// purple
+color 5: #4E5AB7
+color 13: #5350B9
+
+// cyan
+color 6: #1081D6
+color 14: #0F7DDB
+
+// grey
+color 7: #D6DBE5
+color 15: #FFFFFF
