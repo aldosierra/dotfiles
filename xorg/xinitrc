@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Load Xresources file
+[ -f ~/.config/x11/Xresources ] && xrdb -merge -I$HOME ~/.config/x11/Xresources
+# Set Wallpaper
+$HOME/.fehbg &
+# Notify
+dunst &
+# Status bar
+dwmsbar &
+# Hide mouse
+unclutter --timeout 3 &
+# Keybinds
+sxhkd &
+# Compositor
+picom --experimental-backends --vsync &
+# Launc dwm
+exec dwm
