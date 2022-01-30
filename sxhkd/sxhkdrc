@@ -1,0 +1,27 @@
+# Reload functions
+super + Escape
+	killall sxhkd && pgrep sxhkd || sxhkd
+# Reload dmenu cache
+super + shift + Escape
+    rm ~/.cache/dmenu_run
+# Spawn terminal
+super + Return
+    $TERMINAL
+# Spawn firefox
+super + w
+    firefox
+# Spawn Bluetoothctl
+super + o
+    $TERMINAL -t "btmgr" -e bluetoothctl
+# Brightness keys
+XF86MonBrightnessDown
+    backlight down
+XF86MonBrightnessUp
+	backlight up
+# Volume keys
+XF86AudioLowerVolume
+    pulsemixer --change-volume -5
+XF86AudioRaiseVolume
+    pulsemixer --change-volume +5
+XF86AudioMute
+    pulsemixer --toggle-mute
