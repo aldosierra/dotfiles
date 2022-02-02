@@ -12,6 +12,8 @@ dwmsbar &
 unclutter --timeout 3 &
 # Keybinds
 sxhkd &
+# MPD
+mpd &
 # Compositor
 picom --experimental-backends --vsync &
 # Launc dwm

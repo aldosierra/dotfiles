@@ -7,9 +7,9 @@ super + shift + Escape
 # Spawn terminal
 super + Return
     $TERMINAL
-# Spawn firefox
+# Spawn chromium
 super + w
-    firefox
+    chromium
 # Spawn Bluetoothctl
 super + o
     $TERMINAL -t "btmgr" -e bluetoothctl
