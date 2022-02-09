@@ -6,6 +6,8 @@ return require('packer').startup(function(use)
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
   -- Tokyonight Theme
   use 'folke/tokyonight.nvim'
+  -- Catppuccin
+use({ "catppuccin/nvim", as = "catppuccin" })
   -- Lualine
   use {'nvim-lualine/lualine.nvim', requires = {'kyazdani42/nvim-web-devicons', opt = true}}
   -- Bufferline

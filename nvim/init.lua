@@ -5,6 +5,8 @@ require('plugins')
 require('treesitter-conf')
 -- Tokyonight Conf
 require('tokyonight-conf')
+-- Catppuccin Conf
+-- require('catppuccin-conf')
 -- General Settings
 require('options')
 -- Lualine Conf
